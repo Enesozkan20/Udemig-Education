@@ -1,0 +1,64 @@
+.top-education {
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: $h2-font;
+        font-weight: 800;
+        white-space: nowrap;
+    }
+
+    .btn {
+        margin-top: 40px;
+    }
+
+    .educations {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        align-items: center;
+        gap: 3rem;
+        margin-top: 5rem;
+
+        .education-card {
+            position: relative;
+
+            &:hover>img {
+                transform: scale(1.05);
+            }
+
+            img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 10px;
+                display: block;
+                filter: brightness(70%);
+                cursor: pointer;
+                @extend .transition;
+            }
+
+            .content {
+                position: absolute;
+                bottom: 45px;
+                left: 15px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h3 {
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    i {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}

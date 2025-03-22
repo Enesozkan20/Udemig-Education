@@ -1,0 +1,47 @@
+.educations {
+
+    .education-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+
+        .course-card {
+            display: flex;
+            @extend .flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .course-image {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                border-radius: 50%;
+
+                img {
+                    width: 100%;
+                    @extend .transition;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            h4 {
+                font-size: 17px;
+                font-weight: bold;
+                cursor: pointer;
+                @extend .transition;
+
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+
+    }
+}
