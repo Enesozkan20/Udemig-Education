@@ -33,16 +33,28 @@ An educational platform website built with modern web technologies.
 ├── index.html
 
 ├── css/
+
 │   └── style.css        # Compiled from SCSS
+
+
 ├── scss/
+
 │   ├── _variables.scss  # $primary-color: #4158d0;
-│   ├── _header.scss     # Navigation bar styles
+
+│   ├── _header.scss     # Navigation bar styles3
+
 │   ├── _footer.scss     # Footer layout
+
 │   ├── _home.scss       # Hero section styles
+
 │   ├── _about-us.scss   # Team bios, mission
+
 │   ├── _contact-us.scss # Form styling
+
 │   ├── _educations.scss # Course cards grid
+
 │   ├── _top-educations.scss # Featured courses
+
 │   └── style.scss        # Master import file
 
 └── images/                 # All visual assets
